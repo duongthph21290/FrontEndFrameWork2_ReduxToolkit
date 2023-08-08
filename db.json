@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "Mũ lưỡi trai New York",
+      "id": 3,
+      "price": "100.000",
+      "description": "FPT Polytechnic",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2023/03/mu-luoi-trai-m186-1-247x247.jpg"
+    },
+    {
+      "name": "Mũ lưỡi trang Thổ Tang",
+      "price": "200.000",
+      "description": "Việt Nam ⭐ ⭐ ⭐",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2023/05/mu-luoi-trai-jeep-chinh-hang-1-247x247.jpg",
+      "id": 4
+    },
+    {
+      "name": "Mũ lưỡi trai Baseball",
+      "price": "300.000",
+      "description": "Thoáng khí, cotton 100%",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2021/03/M22-247x247.jpg",
+      "id": 5
+    },
+    {
+      "name": "Mũ lưỡi trai nam họa tiết nhiều màu",
+      "price": "350.000",
+      "description": "Được đánh giá 5 sao ⭐",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2021/05/M64-247x247.jpg",
+      "id": 6
+    },
+    {
+      "name": "Nón Kết Jeans thời trang",
+      "price": "99.000",
+      "description": "Cao cấp ⭐ ⭐",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2021/12/mu-luoi-trai-jean-xanh-M158-1-247x247.jpg",
+      "id": 7
+    }
+  ]
+}
