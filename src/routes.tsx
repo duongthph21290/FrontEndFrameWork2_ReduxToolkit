@@ -9,12 +9,26 @@ import AboutPage from './pages/About'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import ProductDetailPage from './pages/ProductDetail'
+import Dashboard from './pages/Dashboard'
 
+
+// const PrivateRoute = ({ isAuth }: any) => {
+//     const navigate = useNavigate();
+
+//     useEffect(() => {
+//         if (!isAuth) {
+//             navigate('/login')
+//         }
+//     }, [isAuth])
+
+//     return isAuth ? <Outlet /> : <Navigate to='/login' />
+// }
 
 export const routers = createBrowserRouter([
     {
         path: "/",
-        element: <LayoutWebsite />,
+        element:
+            <LayoutWebsite />,
         children: [
             { index: true, element: <Navigate to="home" /> },
             { path: "home", element: <HomePage /> },
@@ -29,10 +43,11 @@ export const routers = createBrowserRouter([
         element: <LayoutAdmin />,
         children: [
             { index: true, element: <Navigate to="dashboard" /> },
-            { path: 'dashboard', element: <h2 className='font-bold text-2xl'>Thống kê</h2> },
+            { path: 'dashboard', element: <Dashboard /> },
             { path: 'product', element: <AdminProduct /> },
             { path: 'product/add', element: <AdminAdd /> },
             { path: 'product/:idProduct/edit', element: <AdminEdit /> }
         ]
-    }
+    },
+    { path: "*", element: " Not Found Page 404" },
 ])

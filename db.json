@@ -29,11 +29,34 @@
       "id": 6
     },
     {
-      "name": "Nón Kết Jeans thời trang",
+      "name": "Nón Kết Jeans thời trang 1",
       "price": "99.000",
       "description": "Cao cấp ⭐ ⭐",
       "image": "https://zerdio.com.vn/wp-content/uploads/2021/12/mu-luoi-trai-jean-xanh-M158-1-247x247.jpg",
       "id": 7
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$G0HwpvlZyEjB2S8B/D6zQeUdDRFdLP/YeJxw6xgdrb9lJVT20Zpla",
+      "name": "Hải Dương",
+      "confirmPassword": "123123",
+      "id": 1
+    },
+    {
+      "email": "haiduong12122003@gmail.com",
+      "password": "$2a$10$uo4bDJa5GZbK1A6iOax5nejLFVA5ChbYe2FUmKT8DG3EcA7Kkit2O",
+      "name": "Hai Duong 1",
+      "confirmPassword": "123123",
+      "id": 2
+    },
+    {
+      "email": "haiduong2003@gmail.com",
+      "password": "$2a$10$qcI8GltRvIc2LkDJhaQ40.nqi9RXV.8EKQnwhpl0wFDbt6kbeyg5i",
+      "name": "Hải Dương 2003",
+      "confirmPassword": "123123",
+      "id": 3
     }
   ]
 }

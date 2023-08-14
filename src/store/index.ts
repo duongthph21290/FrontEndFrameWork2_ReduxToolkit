@@ -1,3 +1,4 @@
+import authApi from '@/api/auth';
 import productApi, { productReducer } from '@/api/product';
 import { Action, ThunkAction, combineReducers, configureStore } from '@reduxjs/toolkit';
 import {
@@ -18,8 +19,11 @@ const persistConfig = {
     whitelist: ['cart']
 }
 const rootReducer = combineReducers({
-    products: productReducer,
+    [productApi.reducerPath]: productReducer,
+    [authApi.reducerPath]: authApi.reducer
 })
+
+const middleware = [productApi.middleware, authApi.middleware];
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 export const store = configureStore({
@@ -29,7 +33,7 @@ export const store = configureStore({
             serializableCheck: {
                 ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
             },
-        }).concat(productApi.middleware),
+        }).concat(...middleware),
 })
 export type AppDispatch = typeof store.dispatch
 export type RootState = ReturnType<typeof store.getState>
