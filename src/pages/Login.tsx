@@ -44,7 +44,7 @@ const Login = () => {
     <div className="bg-gray-100 min-h-screen py-12">
       <div>
         <Form
-        form={form}
+          form={form}
           name="basic"
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 16 }}
